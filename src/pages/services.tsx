@@ -40,7 +40,7 @@ const Services = () => {
         <div className="relative z-10">
           <h1 className="text-4xl font-bold">Our Services</h1>
           <p className="mt-4 text-lg">
-            Kami menawarkan berbagai layanan untuk memenuhi kebutuhan bisnis Anda.
+          We offer a variety of services to meet your business needs
           </p>
         </div>
       </section>
