@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
         className="w-full h-[100vh] flex items-center justify-center bg-cover bg-center relative bg-[#414142]"
         style={{
           backgroundImage: `url('meetingphoto2.jpeg')`,
-          filter: 'brightness(90%)', 
+          filter: 'brightness (90%)', 
         }}
       >
         {/* Overlay */}

@@ -13,7 +13,7 @@ const ModalContact = ({ isVisible, onClose }) => {
         <h2 className="text-2xl font-bold mb-4 text-center">Contact Us</h2>
         <form>
           <div className="mb-4">
-            <label className="block text-gray-700">Your Name</label>
+            <label className="block text-gray-700">Full Name</label>
             <input
               type="text"
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"

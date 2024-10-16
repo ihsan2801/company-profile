@@ -6,7 +6,8 @@ import Home from './components/home';
 import About from './pages/about';
 import Services from './pages/services';
 import ModalContact from './pages/contact';
-import Testimonials from './components/testimonials'; // Pastikan path benar
+import Testimonials from './components/testimonials'; 
+import Teams from './pages/teams';
 
 const App = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/teams" element={<Teams />} />
           <Route path="/testimonials" element={<Testimonials />} /> 
         </Routes>
 

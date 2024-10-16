@@ -48,6 +48,11 @@ const Navbar: React.FC = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/teams" className="text-white font-medium" onClick={toggleMenu}>
+                  Teams
+                </Link>
+              </li>
+              <li>
                 {/* Gunakan toggleModal untuk membuka modal saat "Contact" diklik */}
                 <button className="text-white font-medium" onClick={toggleModal}>
                   Contact
