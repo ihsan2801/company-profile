@@ -9,10 +9,10 @@ const About: React.FC = () => {
         <div className="container mx-auto py-12 px-6 md:px-0 flex flex-col md:flex-row items-center">
           {/* Image */}
           <div className="w-full md:w-1/2">
-            <img src="/about-us.jpg" alt="Company Building" className="rounded-lg shadow-lg" />
+            <img src="/about-us-2.jpg" alt="Company Building" className="rounded-lg shadow-lg" />
           </div>
           {/* Text */}
-          <div className="w-full md:w-1/2 mt-8 md:mt-0 md:pl-12">
+          <div className="w-full md:w-1/2 mt-8 md:mt-0 md:pl-12 text-center md:text-left">
             <h2 className="text-3xl font-bold mb-4">Who We Are</h2>
             <p className="text-gray-700 mb-6">
               Veritas Digital Technology is a leading digital technology school dedicated to empowering individuals with skills and knowledge for the future. Our goal is to provide the best learning experience.
@@ -43,7 +43,7 @@ const About: React.FC = () => {
         {/* Our Story */}
         <div className="py-12 bg-gray-50">
           <div className="container mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">Our Story</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">History</h2>
             <p className="text-gray-700 text-lg text-justify px-6">
               Veritas Digital Technology was founded in 2010 with the aim of bridging the gap between traditional education and the rapidly evolving technology landscape. Our founders, experienced professionals in the field, recognized the need for a more adaptive and hands-on approach to education that equips students with real-world skills. Over the years, we have expanded our programs, offering courses in software development, data science, and digital marketing. Our commitment to innovation and excellence has allowed us to help countless individuals achieve their dreams in the tech industry.
             </p>

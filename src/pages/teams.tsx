@@ -1,12 +1,14 @@
 import { FaInstagram, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Teams = () => {
+  // Leadership team data
   const leadershipTeamMembers = [
     {
       id: 1,
       name: "Alexander Reinhardt",
       title: "Chief Technology Officer",
-      description: "Expertise: Cloud Infrastructure, Software Engineering, System Architecture. John leads the technology strategy at Veritas with over 15 years of experience.",
+      description:
+        "Expertise: Cloud Infrastructure, Software Engineering, System Architecture. John leads the technology strategy at Veritas with over 15 years of experience.",
       imgSrc: "/alexander-reinhardt.jpg", 
       instagram: "https://instagram.com",
       linkedin: "https://linkedin.com",
@@ -16,7 +18,8 @@ const Teams = () => {
       id: 2,
       name: "Victoria Thompson",
       title: "Chief Executive Officer",
-      description: "Expertise: Corporate Strategy, Innovation Leadership, Business Growth. As the visionary leader of Veritas, Emily steers the company toward innovation and growth, ensuring we remain at the forefront of industry advancements. Her commitment to excellence fosters a culture of collaboration and continuous improvement.",
+      description:
+        "Expertise: Corporate Strategy, Innovation Leadership, Business Growth. As the visionary leader of Veritas, Emily steers the company toward innovation and growth, ensuring we remain at the forefront of industry advancements. Her commitment to excellence fosters a culture of collaboration and continuous improvement.",
       imgSrc: "/victoria-thompson.jpg",
       instagram: "https://instagram.com",
       linkedin: "https://linkedin.com",
@@ -24,13 +27,15 @@ const Teams = () => {
     },
   ];
 
+  // Membership team data
   const membershipTeamMembers = [
     {
       id: 1,
       name: "Ethan Montgomery",
       title: "Lead Engineer",
-      description: "Expertise: Full-Stack Development, Systems Architecture, AI-driven Engineering. Ethan spearheads Veritas' engineering division, delivering cutting-edge technology solutions. His technical acumen and ability to foster innovation among the team have been pivotal in scaling the company's infrastructure.",
-      imgSrc: "/ethan-montgomery.jpg",
+      description:
+        "Expertise: Full-Stack Development, Systems Architecture, AI-driven Engineering. Ethan spearheads Veritas' engineering division, delivering cutting-edge technology solutions.",
+      imgSrc: "/ethan-montgomery.jpg", 
       instagram: "https://instagram.com",
       linkedin: "https://linkedin.com",
       email: "mailto:ethanmontgomery@veritas.com",
@@ -39,7 +44,8 @@ const Teams = () => {
       id: 2,
       name: "Samantha Brooks",
       title: "Head of Products Development",
-      description: "Expertise: Product Design, User Experience (UX), Agile Development. Samantha bridges the gap between product vision and reality, leading a cross-functional team to bring innovative products to market. Her user-first approach ensures that Veritas' solutions are both effective and intuitive.",
+      description:
+        "Expertise: Product Design, User Experience (UX), Agile Development. Samantha bridges the gap between product vision and reality, leading a cross-functional team to bring innovative products to market.",
       imgSrc: "/samantha-brooks.jpg",
       instagram: "https://instagram.com",
       linkedin: "https://linkedin.com",
@@ -49,7 +55,8 @@ const Teams = () => {
       id: 3,
       name: "Michael Jennings",
       title: "Data Science Lead",
-      description: "Expertise: Machine Learning, Predictive Analytics, Data Strategy. Michael harnesses the power of data to unlock insights that fuel Veritas’ strategic decisions. His expertise in predictive analytics and AI has revolutionized the company's approach to data-driven innovation. ",
+      description:
+        "Expertise: Machine Learning, Predictive Analytics, Data Strategy. Michael harnesses the power of data to unlock insights that fuel Veritas’ strategic decisions.",
       imgSrc: "/michael-jennings.jpg",
       instagram: "https://instagram.com",
       linkedin: "https://linkedin.com",
@@ -59,7 +66,8 @@ const Teams = () => {
       id: 4,
       name: "Olivia Rivers",
       title: "Senior Marketing Strategist",
-      description: "Expertise: Brand Strategy, Digital Marketing, Consumer Engagement. Olivia leads Veritas' global marketing efforts, ensuring that the company’s brand resonates across digital channels. Her campaigns have consistently elevated Veritas’ presence and driven growth in key markets.",
+      description:
+        "Expertise: Brand Strategy, Digital Marketing, Consumer Engagement. Olivia leads Veritas' global marketing efforts, ensuring that the company’s brand resonates across digital channels.",
       imgSrc: "/olivia-rivers.jpg",
       instagram: "https://instagram.com",
       linkedin: "https://linkedin.com",
@@ -68,8 +76,9 @@ const Teams = () => {
     {
       id: 5,
       name: "Daniel Cohen",
-      title: "Expertise: Emerging Technologies, Innovation Strategy, R&D. Daniel drives the R&D agenda at Veritas, exploring new technologies that will shape the future of the business. His forward-thinking approach and ability to translate ideas into tangible innovations ensure that Veritas stays ahead of the curve.",
-      description: "Mark analyzes our data to provide valuable insights and improve decision-making.",
+      title: "Head of Research and Development",
+      description:
+        "Expertise: Emerging Technologies, Innovation Strategy, R&D. Daniel drives the R&D agenda at Veritas, exploring new technologies that will shape the future of the business.",
       imgSrc: "/daniel-cohen.jpg",
       instagram: "https://instagram.com",
       linkedin: "https://linkedin.com",
@@ -79,7 +88,8 @@ const Teams = () => {
       id: 6,
       name: "Grace Campbell",
       title: "Human Resources Director",
-      description: "Expertise: Talent Acquisition, Organizational Development, Leadership Coaching. Grace is responsible for cultivating a high-performing team at Veritas. Her focus on talent development and organizational excellence ensures that Veritas remains a leader in its field by nurturing the brightest minds.  ",
+      description:
+        "Expertise: Talent Acquisition, Organizational Development, Leadership Coaching. Grace is responsible for cultivating a high-performing team at Veritas.",
       imgSrc: "/grace-campbell.jpg",
       instagram: "https://instagram.com",
       linkedin: "https://linkedin.com",
@@ -95,10 +105,10 @@ const Teams = () => {
         className="bg-blue-900 text-white py-16 text-center mt-16"
         style={{
           backgroundImage: `url('/meet-the-team.jpg')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          height: '300px',
-          filter: 'brightness(90%)',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "300px",
+          filter: "brightness(90%)",
         }}
       >
         {/* Overlay */}
@@ -106,14 +116,14 @@ const Teams = () => {
 
         <div className="relative z-10">
           <h1 className="text-4xl font-bold mb-4 text-shadow">Meet the Veritas Team</h1>
-            <p className="text-xl">
-                Veritas, our success is driven by our talented and dedicated team.
-                Explore the mix of innovation, collaboration, and expertise that drives us forward.
-            </p>
+          <p className="text-xl">
+            Veritas, our success is driven by our talented and dedicated team.
+            Explore the mix of innovation, collaboration, and expertise that drives us forward.
+          </p>
         </div>
+      </div>
 
-        </div>
-        {/* Leadership Team Section */}
+      {/* Leadership Team Section */}
       <div className="py-16 bg-gray-100">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">Leadership Team</h2>
@@ -172,7 +182,7 @@ const Teams = () => {
                   </a>
                 </div>
               </div>
-            ))};
+            ))}
           </div>
         </div>
       </div>

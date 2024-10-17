@@ -4,7 +4,7 @@ const testimonials = [
     name: "Michael Anderson",
     title: "Senior Software Engineer at Veritas Technologies",
     feedback: "Veritas has transformed my career with their excellent courses! The comprehensive curriculum provided me with a solid foundation in programming and helped me enhance my problem-solving skills significantly. I am now more confident in my abilities and am excited to apply what I've learned in my professional role.",
-    imgSrc: "/michael-anderson.jpg", // Add image paths for the circular image
+    imgSrc: "/michael-anderson.jpg",
   },
   {
     id: 2,
@@ -71,7 +71,7 @@ const Testimonial: React.FC = () => {
               <img
                 src={testimonial.imgSrc}
                 alt={testimonial.name}
-                className="w-34 h-34 rounded-full mb-4 object-cover" // Adjust size as needed
+                className="w-34 h-34 rounded-full mb-4 object-cover" 
               />
               <h4 className="font-bold mt-4">{testimonial.name}</h4>
               <h5 className="text-gray-500 mt-1">{testimonial.title}</h5>

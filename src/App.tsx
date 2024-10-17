@@ -31,7 +31,7 @@ const App = () => {
           <Route path="/testimonials" element={<Testimonials />} /> 
         </Routes>
 
-        {/* Footer cukup dipanggil sekali saja di App.tsx */}
+        {/* Footer di App.tsx */}
         <Footer toggleModal={toggleModal} />
 
         {/* Modal Contact yang muncul saat toggle */}

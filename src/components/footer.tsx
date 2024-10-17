@@ -1,7 +1,11 @@
 import { FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-const Footer = ({ toggleModal }) => { // Terima props toggleModal dari App.tsx
+type FooterProps = {
+  toggleModal: () => void;
+};
+
+const Footer: React.FC<FooterProps> = ({ toggleModal }) => {
   return (
     <footer className="bg-gray-900 text-white py-8">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between">
@@ -25,7 +29,11 @@ const Footer = ({ toggleModal }) => { // Terima props toggleModal dari App.tsx
         <div className="mb-6 md:mb-0">
           <h4 className="font-bold mb-2">Resources</h4>
           <ul>
-            <li><button className="hover:text-gray-400" onClick={toggleModal}>Contact Us</button></li> {/* Ubah <a> ke button */}
+            <li>
+              <button className="hover:text-gray-400" onClick={toggleModal}>
+                Contact Us
+              </button>
+            </li>
             <li><Link to="/testimonials" className="hover:text-gray-400">Testimonials</Link></li>
           </ul>
         </div>
@@ -46,8 +54,7 @@ const Footer = ({ toggleModal }) => { // Terima props toggleModal dari App.tsx
           </div>
         </div>
       </div>
- 
- 
+
       <div className="text-center mt-6">
         <p className="text-gray-500">&copy; 2024 Veritas Digital Technology. All rights reserved.</p>
       </div>

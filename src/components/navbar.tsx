@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import dari react-router-dom
-import ModalContact from '../pages/contact'; // Pastikan sudah mengimpor ModalContact
+import { Link } from 'react-router-dom';
+import ModalContact from '../pages/contact'; 
 
-const Navbar: React.FC = () => {
+type NavbarProps = {
+  toggleModal: () => void; 
+};
+
+const Navbar: React.FC<NavbarProps> = ({ toggleModal }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false); // State untuk modal
+  const [isModalOpen] = useState(false); // State untuk modal
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-  };
-
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);
   };
 
   return (

@@ -29,10 +29,10 @@ const Services = () => {
       <section
         className="text-center text-white py-20 relative"
         style={{
-          backgroundImage: `url('service.jpg')`, // replace with your image path
+          backgroundImage: `url('service.jpg')`, 
           backgroundSize: "cover",
           backgroundPosition: "center",
-          backgroundAttachment: "fixed", // Optional for parallax effect
+          backgroundAttachment: "fixed", 
         }}
       >
         {/* Overlay to darken the background */}

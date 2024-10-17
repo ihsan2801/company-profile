@@ -1,5 +1,18 @@
-const ModalContact = ({ isVisible, onClose }) => {
+import React from 'react';
+
+type ModalContactProps = {
+  isVisible: boolean; 
+  onClose: () => void; 
+};
+
+const ModalContact: React.FC<ModalContactProps> = ({ isVisible, onClose }) => {
   if (!isVisible) return null;
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault(); 
+    console.log("Form submitted!");
+    onClose();
+  };
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
@@ -11,13 +24,14 @@ const ModalContact = ({ isVisible, onClose }) => {
           &times;
         </button>
         <h2 className="text-2xl font-bold mb-4 text-center">Contact Us</h2>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="block text-gray-700">Full Name</label>
             <input
               type="text"
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
               placeholder="Enter your name"
+              required // Tambahkan validasi
             />
           </div>
           <div className="mb-4">
@@ -26,6 +40,7 @@ const ModalContact = ({ isVisible, onClose }) => {
               type="email"
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
               placeholder="Enter your email"
+              required // Tambahkan validasi
             />
           </div>
           <div className="mb-4">
@@ -34,6 +49,7 @@ const ModalContact = ({ isVisible, onClose }) => {
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
               placeholder="Enter your message"
               rows={4}
+              required // Tambahkan validasi
             ></textarea>
           </div>
           <button
